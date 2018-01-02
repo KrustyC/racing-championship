@@ -57,30 +57,17 @@ const fixtures = [
 const Fixtures = () => (
   <div className="container">
     <div className="section no-pad-bot">
-      <div className="container">
+      <div className="container center">
         <h2 className="header header-title center teal-text text-lighten-2">
-            Our Fixtures
+            Calendar
         </h2>
-      <table className="striped centered">
-        <thead>
-          <tr>
-              <th>Place</th>
-              <th>Date</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {
-            _.map(fixtures, x => (
-              <tr>
-                <td>{x.place }</td>
-                <td>{x.date }</td>
-                <td><a href="#" className="btn"> View </a></td>
-              </tr>
-            ))
-          }
-        </tbody>
-      </table>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam molestiae eos, voluptas dignissimos porro, aspernatur minima repudiandae accusamus nostrum quos exercitationem iusto et repellendus tenetur, quam nisi officiis earum!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam molestiae eos, voluptas dignissimos porro, aspernatur minima repudiandae accusamus nostrum quos exercitationem iusto et repellendus tenetur, quam nisi officiis earum!
+        </p>
+        <button className="btn-large">
+          View Calendar
+        </button>
       <br /><br />
       </div>
     </div>

@@ -27,7 +27,7 @@
       ]
 
       return (
-        <nav className="navbar" role="navigation">
+        <nav className="navbar red darken-4" role="navigation">
           <div className="nav-wrapper">
             <a href="#" className="brand-logo center">Logo</a>
             <ul id="nav-mobile" className="left hide-on-med-and-down">

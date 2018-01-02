@@ -27,7 +27,7 @@ class Footer extends Component {
 
   render(){
    return (
-    <footer className="page-footer">
+    <footer className="page-footer red darken-4">
     <div className="container">
       <div className="row">
         <div className="col l6 s12">
@@ -35,27 +35,21 @@ class Footer extends Component {
           <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
         </div>
         <div className="col l4 offset-l2 s12">
-          <h5 className="white-text">Links</h5>
-          <ul>
+          <h5 className="white-text">Find us on</h5>
+          <ul style={{ lineHeight: '50px'}}>
           {
             _.map(this.getLinks(), (x, k) => (
               <li key={k}>
-                <a className="grey-text text-lighten-3" href={x.link} target="_blank">
-                  <span className="fa-layers">
-                    <i
-                      style={{color: x.color}}
-                      className={`fab fa-${x.icon} fa-2x`}
-                      data-fa-transform="shrink-6"
-                      data-fa-compose="fa fa-circle"
-                    />
-                    <span className="fa-layers-text" data-fa-transform="shrink-1 right-55">
-                      {x.value}
-                    </span>
-                  </span>
+                <a className="grey-text text-lighten-3" href={x.link}>
+                  <i
+                    style={{color: x.color}}
+                    className={`fab fa-${x.icon} fa-2x`}
+                  />
+                
                 </a>
               </li>
             ))
-            }
+          }
           </ul>
         </div>
       </div>
@@ -66,7 +60,7 @@ class Footer extends Component {
       
       <span className="grey-text text-lighten-4 right">
         Developed by{` `}
-        <a className="indigo-text" href="#!">
+        <a className="blue-text" href="#!">
           Motoracing consulting
         </a>
       </span>
@@ -74,7 +68,22 @@ class Footer extends Component {
     </div>
   </footer>
         )
+      }
     }
-}
-
+    
+    // <li key={k}>
+    //   <a className="grey-text text-lighten-3" href={x.link} target="_blank">
+    //     <span className="fa-layers">
+    //       <i
+    //         style={{color: x.color}}
+    //         className={`fab fa-${x.icon} fa-2x`}
+    //         data-fa-transform="shrink-6"
+    //         data-fa-compose="fa fa-circle"
+    //       />
+    //       <span className="fa-layers-text" data-fa-transform="shrink-1 right-55">
+    //         {x.value}
+    //       </span>
+    //     </span>
+    //   </a>
+    // </li>
 export default Footer

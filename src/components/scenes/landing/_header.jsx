@@ -1,11 +1,11 @@
 import React from 'react'
 
 const Header = () => (
-  <div id="index-banner" className="parallax-container">
+  <div id="header-section" className="parallax-container valign-wrapper">
     <div className="section no-pad-bot">
       <div className="container">
         <br /><br />
-        <h1 className="header header-title center teal-text text-lighten-2">
+        <h1 className="header header-title center red-text darken-4">
           Competition name
         </h1>
         <div className="row center">
@@ -16,7 +16,7 @@ const Header = () => (
         <div className="row center">
           <a
             href="http://materializecss.com/getting-started.html"
-            className="btn-large waves-effect waves-light teal lighten-1"
+            className="btn-large waves-effect waves-light teal"
           >
             Get Started
           </a>
@@ -25,13 +25,7 @@ const Header = () => (
 
       </div>
     </div>
-    <div className="parallax">
-      <img
-        src="https://s3-eu-west-1.amazonaws.com/racing-cdn/racing2.jpg"
-        alt="Unsplashed background img 1"
-        style={{ display: 'block' }}
-      />
-    </div>
+    
   </div>
 )
 

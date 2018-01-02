@@ -18,18 +18,38 @@
  .button-collapse {
    color: #26a69a;
  }
- 
+
 .parallax-container {
   min-height: 380px;
+  &#header-section {
+    min-height: 920px;
+    background-image: url("https://s3-eu-west-1.amazonaws.com/racing-cdn/racing2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  &#quote-section {
+    min-height: 800px;
+    background-image: url("https://s3-eu-west-1.amazonaws.com/racing-cdn/racing1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
   line-height: 0;
   height: auto;
 
   .section {
-    margin-top: 80px !important;
     width: 100%;
 
     .header-subtitle {
       color: #fff !important;
+    }
+  }
+
+  .parallax {
+    img {
+      
+      display: block !important;
     }
   }
 }
